@@ -10,6 +10,8 @@ body {
     background-color: #f4f4f4;
     line-height: 1.6;
     color: #333;
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -33,35 +35,63 @@ nav a {
     color: #fff;
 }
 
+/* Hero Section Styling */
 .hero {
+    background-size: cover;
+    background-position: center;
     text-align: center;
     padding: 100px 0;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
 }
 
 .cta-button {
     display: inline-block;
-    background-color: #333;
+    background-color: #f00; /* Cor do botão, personalize conforme desejado */
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
     border: none;
     border-radius: 5px;
-    margin-top: 20px;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
 }
 
-.about, .services, .contact {
+.cta-button:hover {
+    background-color: #d00; /* Cor do botão ao passar o mouse, personalize conforme desejado */
+}
+
+/* Sections Styling */
+section {
     padding: 50px 0;
     text-align: center;
 }
 
-.services ul {
+section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* List Styling */
+ul {
     list-style: none;
 }
 
-.services li {
+ul li {
+    font-size: 1.2em;
     margin: 10px 0;
 }
 
+/* Contact Form Styling */
 .contact form {
     text-align: left;
     max-width: 400px;
@@ -72,8 +102,32 @@ nav a {
     display: block;
     margin-bottom: 20px;
     width: 100%;
+    padding: 10px;
+    font-size: 1.2em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
+.contact label {
+    font-weight: bold;
+}
+
+.contact button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact button[type="submit"]:hover {
+    background-color: #000;
+}
+
+/* Footer Styling */
 footer {
     text-align: center;
     padding: 20px 0;
